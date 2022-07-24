@@ -1,0 +1,43 @@
+[debug] [2022-07-24T16:12:06.839Z] ----------------------------------------------------------------------
+[debug] [2022-07-24T16:12:06.841Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\danie\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-07-24T16:12:06.841Z] CLI Version:   11.3.0
+[debug] [2022-07-24T16:12:06.841Z] Platform:      win32
+[debug] [2022-07-24T16:12:06.841Z] Node Version:  v16.15.1
+[debug] [2022-07-24T16:12:06.842Z] Time:          Sun Jul 24 2022 17:12:06 GMT+0100 (British Summer Time)
+[debug] [2022-07-24T16:12:06.843Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-24T16:12:06.929Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-24T16:12:06.931Z] > authorizing via signed-in user (danieldavies300@gmail.com)
+[debug] [2022-07-24T16:12:06.932Z] [iam] checking project facebook-cloned-react for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-24T16:12:06.935Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/facebook-cloned-react:testIamPermissions [none]
+[debug] [2022-07-24T16:12:06.936Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/facebook-cloned-react:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-24T16:12:07.687Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/facebook-cloned-react:testIamPermissions 200
+[debug] [2022-07-24T16:12:07.688Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/facebook-cloned-react:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-24T16:12:07.692Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/facebook-cloned-react [none]
+[debug] [2022-07-24T16:12:07.961Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/facebook-cloned-react 200
+[debug] [2022-07-24T16:12:07.961Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/facebook-cloned-react {"projectId":"facebook-cloned-react","projectNumber":"289404281782","displayName":"Facebook Cloned react","name":"projects/facebook-cloned-react","resources":{"hostingSite":"facebook-cloned-react","storageBucket":"facebook-cloned-react.appspot.com","locationId":"europe-west"},"state":"ACTIVE","etag":"1_890b3031-cca6-4308-beb3-54927e92401c"}
+[info] 
+[info] === Deploying to 'facebook-cloned-react'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-07-24T16:12:07.966Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/facebook-cloned-react [none]
+[debug] [2022-07-24T16:12:08.236Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/facebook-cloned-react 200
+[debug] [2022-07-24T16:12:08.237Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/facebook-cloned-react {"projectId":"facebook-cloned-react","projectNumber":"289404281782","displayName":"Facebook Cloned react","name":"projects/facebook-cloned-react","resources":{"hostingSite":"facebook-cloned-react","storageBucket":"facebook-cloned-react.appspot.com","locationId":"europe-west"},"state":"ACTIVE","etag":"1_890b3031-cca6-4308-beb3-54927e92401c"}
+[debug] [2022-07-24T16:12:08.243Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/289404281782/sites/facebook-cloned-react/versions [none]
+[debug] [2022-07-24T16:12:08.243Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/289404281782/sites/facebook-cloned-react/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-07-24T16:12:09.264Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/289404281782/sites/facebook-cloned-react/versions 500
+[debug] [2022-07-24T16:12:09.265Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/289404281782/sites/facebook-cloned-react/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-07-24T16:12:09.328Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}

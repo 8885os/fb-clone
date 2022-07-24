@@ -4,13 +4,13 @@ import 'firebase/compat/firestore';
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCwxO935-uMh8j7D5ym8V0nyYI7rjzLtzs",
-    authDomain: "facebook-cloned-react.firebaseapp.com",
-    projectId: "facebook-cloned-react",
-    storageBucket: "facebook-cloned-react.appspot.com",
-    messagingSenderId: "289404281782",
-    appId: "1:289404281782:web:c7d3c227a5a9d0c4c11717",
-    measurementId: "G-176EFKBETW"
+    apiKey: "AIzaSyDCxRkf6z99H-sYS13bJbdUPE-QPOZuIBA",
+    authDomain: "fb-react-d5f3e.firebaseapp.com",
+    projectId: "fb-react-d5f3e",
+    storageBucket: "fb-react-d5f3e.appspot.com",
+    messagingSenderId: "793613223440",
+    appId: "1:793613223440:web:ae67de26dd56f73984ac95",
+    measurementId: "G-QGCMVL2C3R"
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig)
