@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "facebook-cloned-react"
-  }
+    "default": "facebook-cloned-react",
+    "fb-clone": "fb-react-d5f3e"
+  },
+  "targets": {},
+  "etags": {}
 }
