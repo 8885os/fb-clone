@@ -67,3 +67,51 @@
     background-color: #eff2f5;
     border-radius: 10px;
 }
+
+@media screen and (max-width: 600px) {
+
+    .post__top>.MuiAvatar-root {
+        width: 100px;
+        height: 100px;
+    }
+
+    .post__topInfo>h3 {
+        font-size: 40px;
+    }
+
+    .post__topInfo>p {
+        font-size: 30px;
+    }
+
+    .post__bottom>p {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .post__top>.MuiAvatar-root {
+        width: 100px;
+        height: 100px;
+    }
+
+    .post__topInfo>h3 {
+        font-size: 40px;
+    }
+
+    .post__topInfo>p {
+        font-size: 30px;
+    }
+
+    .post__bottom>p {
+        font-size: 50px;
+    }
+
+    .post__option>p {
+        font-size: 50px;
+    }
+
+    .post__option>.MuiSvgIcon-root {
+        font-size: 50px;
+    }
+}
